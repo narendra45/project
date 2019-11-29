@@ -1,0 +1,27 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+<form action="/plotuser/saveuser/" method="post">
+        {% csrf_token %}
+        UserId:<input type="number" name="userid" placeholder="Enter User Id"><br>
+        Name:<input type="text" name="username" placeholder=" Enter Username"><br>
+        Email Id:<input type="email" name="email" placeholder="Enter User Email"><br>
+        Phone No:<input type="number" name="number" placeholder="Enter UserMobile Number"><br>
+        Address:<textarea name="address" rows="5" cols="10">Enter User Address</textarea><br>
+        <input type="submit">
+
+    </form>
+
+    <div>
+    {% if message %}
+        {% for message in messages %}
+        <h3> {{message}}  </h3>
+        {% endfor %}
+    {% endif %}
+    </div>
+{% endblock %}
+
+
+{% comment %}
+<textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+{% endcomment %}

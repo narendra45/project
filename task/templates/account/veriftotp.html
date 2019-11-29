@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% if user %}
+{% block body %}
+    <div class="container" style="margin-top:100px">
+    <form action="/accounts/verify/" method="post">
+        {% csrf_token %}
+    <div class="row justify-content-center" style="margin-top:30px">
+    	<div class="col-sm-2">
+      		<label for="otp">Enter Otp</label>
+      	</div>
+      	<div class="col-sm-4">
+      		<input type="number" class="form-control" id="otp" name="otp" >
+    	</div>
+ 	</div>
+
+    <div class="row justify-content-center" style="margin-top:30px">
+
+      	<div class="col-sm-4">
+      		<input type="text" class="form-control" value="{{ user.username }}" id="username" name="username" hidden>
+    	</div>
+ 	</div>
+
+    <div class="row justify-content-center" style="margin-top:10px">
+
+      <div class="col-sm-4">
+      <input type="password" class="form-control" value="{{ user.password }}" id="password" name="password" hidden>
+      </div>
+    </div>
+   <div class="row justify-content-center" style="margin-top:10px">
+
+    	<button type="submit" class="btn btn-primary">Verify</button>
+     </div>
+    </form>
+    </div>
+
+    {% comment %}
+    <form action="/accounts/verify/" method="post">
+    {% csrf_token %}
+        <input type="number" placeholder="enter your otp here" name="otp" required>
+        <input type="text" value="{{ user.username }}" name="username"  hidden required>
+        <input type="password" value="{{ user.password }}" name="password"  hidden required>
+        <input type="submit">
+    </form>
+    {% endcomment %}
+    {% endblock %}
+{% endif %}
+
+{% if message %}
+{{ message }}
+{% endif %}
+
+
+
+{% comment %}
+    <div class="container" style="margin-top:100px">
+    <form action="/accounts/verify/" method="post">
+    <div class="row justify-content-center" style="margin-top:30px">
+    	<div class="col-sm-2">
+      		<label for="otp">Enter Otp</label>
+      	</div>
+      	<div class="col-sm-4">
+      		<input type="number" class="form-control" id="otp" name="otp" hidden>
+    	</div>
+ 	</div>
+
+    <div class="row justify-content-center" style="margin-top:30px">
+    	<div class="col-sm-2">
+      		<label for="username">User Name</label>
+      	</div>
+      	<div class="col-sm-4">
+      		<input type="text" class="form-control" id="username" name="username" hidden>
+    	</div>
+ 	</div>
+
+    <div class="row justify-content-center" style="margin-top:10px">
+    	<div class="col-sm-2">
+      <label for="password">Password</label>
+      </div>
+      <div class="col-sm-4">
+      <input type="password" class="form-control" id="password" name="password" hidden>
+      </div>
+    </div>
+   <div class="row justify-content-center" style="margin-top:10px">
+
+    	<button type="submit" class="btn btn-primary">Verify</button>
+     </div>
+    </form>
+    </div>
+
+{% endcomment %}

@@ -1,0 +1,30 @@
+{% extends 'base2.html' %}
+{% block content %}
+
+<table align="center" border="2">
+    <tr>
+        <th>Plot Number</th>
+        <th>Image</th>
+        <th>Road Number</th>
+        <th>Servey Number</th>
+        <th>cost per sqareyard</th>
+        <th>other Expences</th>
+        <th>Boundaries</th>
+        <th>Facing</th>
+        <th>Status</th>
+        <th>Total cost</th>
+    </tr>
+    <tr>
+        <td>{{ data.plot_no }}</td>
+        <td><img src="{{ data.plot_image.url }}" width="100" height="100"></td>
+        <td>{{ data.road_no }}</td>
+        <td>{{ data.survey_no }}</td>
+        <td>{{ data.cost_per_sqd }}</td>
+        <td>{{ data.other_exp }}</td>
+        <td>{{ data.boundaries }}</td>
+        <td>{{ data.facing}}</td>
+        <td>{{ data.status }}</td>
+        <td>{{ data.Total_cost }}</td>
+    </tr>
+</table>
+{% endblock %}

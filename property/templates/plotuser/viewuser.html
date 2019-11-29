@@ -1,0 +1,19 @@
+{% extends "base2.html" %}
+
+{% block content %}
+<form action="/plotuser/viewuserdetails/"method="post">
+{% csrf_token %}
+     <div class="form-group">
+         <label for="userid">Enter User Id</label>
+         <input type="number" name="userid"  class="form-control" id="userid" aria-describedby="basic-addon1">
+     </div>
+<button type="submit" class="btn btn-primary">view</button>
+</form>
+    <div>
+    {% if messages %}
+            {% for message in messages %}
+            <h3> {{message}}  </h3>
+            {% endfor %}
+    {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'welcome.html' %}
+{% block content %}
+
+<div class="container" align="center" style="margin-top:100px">
+    <form action="/accounts/saveupdatedetails/" method="post">
+        {% csrf_token %}
+
+  	<div class="row" align="center" style="margin-top:30px">
+    	<h2>Update Credentials</h2>
+
+    </div>
+    <div class="row" align="center" style="margin-top:30px">
+    	<div class="col-sm-2" align="center">
+      		<label for="first_name">First Name</label>
+      	</div>
+      	<div class="col-sm-4" align="center">
+      		<input type="text" class="form-control" id="first_name" value="{{ user.first_name }}" name="first_name">
+        </div>
+    </div>
+    <div class="row" align="center" style="margin-top:10px">
+    	<div class="col-sm-2">
+      		<label for="last_name">Last Name</label>
+      	</div>
+      	<div class="col-sm-4" align="center">
+      		<input type="text" class="form-control" id="last_name" value="{{ user.last_name }}" name="last_name">
+    	</div>
+    </div>
+  	<div class="row" align="center" style="margin-top:10px">
+    	<div class="col-sm-2" align="center">
+      		<label for="username">User Name</label>
+      	</div>
+      	<div class="col-sm-4" align="center">
+      		<input type="text" class="form-control" id="username" name="username" value="{{ user.username }}" readonly>
+    	</div>
+ 	</div>
+    <div class="row" align="center" style="margin-top:10px">
+    	<div class="col-sm-2" align="center">
+      		<label for="email">Email Id</label>
+      	</div>
+      	<div class="col-sm-4" align="center">
+      		<input type="email" class="form-control" id="email" name="email" value="{{ user.email }}" readonly>
+    	</div>
+ 	</div>
+ 	<div class="row" align="center" style="margin-top:10px">
+    	<div class="col-sm-2" align="center">
+      		<label for="phoneno">Mobile Number</label>
+      	</div>
+      	<div class="col-sm-4" align="center">
+      		<input type="number" class="form-control" id="phoneno" name="phoneno" value="{{ info.contact }}" readonly>
+    	</div>
+ 	</div>
+        <div class="row" align="center" style="margin-top:30px">
+
+      	<div class="col-sm-4 " align="center">
+      		<input type="text" class="d-none" value="{{ user.id }}" id="userid" name="userid" hidden>
+    	</div>
+ 	</div>
+
+    <div class="row" align="center" style="margin-top:10px">
+
+    	<button type="submit" class="btn btn-primary">Update</button>
+    </div>
+    </form>
+</div>
+{% endblock %}

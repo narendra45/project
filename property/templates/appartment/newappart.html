@@ -1,0 +1,121 @@
+{% extends 'base2.html' %}
+
+
+
+{% block content %}
+    <form  class="form-inline" action="/projectdetails/saveappartment/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+     <div class="form-group">
+         <label for="appno ">Appartment Number:</label>
+         <input type="number" name="appno"  class="form-control" id="appno" aria-describedby="basic-addon1">
+     </div><br><br>
+    <div class="form-group">
+        <label for="apptype">Appartment Type:</label>
+        <select class="form-control" id="apptype" name="apptype" aria-describedby="basic-addon1" >
+            <option>.........</option>
+            <option>STUDIO APPARTMENT</option>
+            <option>MULTI-BEDROOM APPARTMENT</option>
+            <option>SODUPLEX</option>
+            <option>TRIPLEX</option>
+        </select>
+     </div><br><br>
+
+
+
+    <div class="form-group">
+         <label for="appimg">Appartment Image:</label>
+         <input type="file" name="appimg"  class="form-control-file border" id="appimg" aria-describedby="basic-addon1" required>
+     </div>
+    <div class="form-group">
+         <label for="apparea">Appartment Area:</label>
+         <input type="number" name="apparea"  class="form-control" id="apparea" aria-describedby="basic-addon1">
+     </div>
+
+    <div class="form-group">
+        <label for="appfloortype">Appartment Floor Type:</label>
+        <select class="form-control" id="appfloortype" name="appfloortype" aria-describedby="basic-addon1" >
+            <option>.........</option>
+            <option>Timber</option>
+            <option>Laminate</option>
+            <option>Vinyl</option>
+            <option>Tile</option>
+            <option>Carpet</option>
+        </select>
+    </div><br><br>
+
+
+    <div class="form-group">
+         <label for="appage">Appartment Age</label>
+         <input type="number" name="appage"  class="form-control" id="appage" aria-describedby="basic-addon1">
+     </div>
+
+
+    <div class="form-group">
+         <label for="appcost">Appartment Cost</label>
+         <input type="number" name="appcost"  class="form-control" id="appcost" aria-describedby="basic-addon1">
+     </div>
+
+
+    <div class="form-group">
+         <label for="otherexp">Other Expences</label>
+         <input type="number" name="otherexp"  class="form-control" id="otherexp" aria-describedby="basic-addon1">
+     </div>
+
+
+    <div class="form-group">
+         <label for="face">Facing:</label>
+      <select class="form-control" id="face" name="face" aria-describedby="basic-addon1">
+        <option>.........</option>
+        <option>EAST</option>
+        <option>WEST</option>
+        <option>NORTH</option>
+        <option>SOUTH</option>
+      </select>
+     </div><br><br>
+
+
+    <div class="form-group">
+         <label for="status">Status:</label>
+      <select class="form-control" id="status" name="status" aria-describedby="basic-addon1" >
+        <option>.........</option>
+        <option>VACANT</option>
+        <option>RESERVED</option>
+        <option>SOLD</option>
+      </select>
+     </div><br><br>
+
+
+    <div class="form-group">
+         <label for="tcost">Total Cost</label>
+         <input type="number" name="tcost"  class="form-control" id="tcost" aria-describedby="basic-addon1">
+     </div>
+
+
+    <button type="submit" class="btn btn-primary">SaveDetails</button>
+
+    </form>
+
+<div class="form-group">
+    {% block message %}
+        {% if message %}
+            {{ message }}
+        {% endif %}
+    {% endblock %}
+
+    </div>
+{% endblock %}
+
+{% comment %}
+apptype appno appimage apparea appfloortype appage appcost otherexp facing status tcost
+app_type = models.CharField(max_length=100)
+    app_no = models.IntegerField(primary_key=True)
+    plot_image = models.ImageField(upload_to="plot_images/",default=False)
+    app_area= models.DecimalField(max_digits=20,decimal_places=2)
+    app_floor_type = models.CharField(max_length=100)
+    app_age = models.IntegerField()
+    cost_per_sqd = models.DecimalField(max_digits=20,decimal_places=2,default=False)
+    other_exp = models.DecimalField(max_digits=10,decimal_places=2,default=False)
+    facing = models.CharField(max_length=20,default=False)
+    status = models.CharField(max_length=20,default=False)
+    total_cost = models.DecimalField(max_digits=20,decimal_places=2,default=False)
+{% endcomment %}

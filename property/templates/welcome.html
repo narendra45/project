@@ -1,0 +1,21 @@
+{% extends 'base2.html'%}
+{% block content %}
+    <div>
+{% if user.is_authenticated %}
+  <h3>Welcome {{ user.username }}!</h3>
+    <div>
+    <a href="/accounts/change_password/" class="btn btn-primary btn-sm" role="button" aria-disabled="true">change Password</a>
+    <a href="/plotuser/adduser/" class="btn btn-secondary btn-sm" role="button" aria-disabled="true">Add User</a>
+    <a href="/plotuser/viewuser/" class="btn btn-success btn-sm" role="button" aria-disabled="true">View User</a>
+    <a href="/plotuser/showdeluserid/" class="btn btn-danger btn-sm" role="button" aria-disabled="true">Delete User</a>
+    </div>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">login</a>
+
+{% endif %}
+    </div>
+    {% if message %}
+            <h3> {{message}}  </h3>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base2.html' %}
+{% block content %}
+<form action="/employee/saveemp/" method="post">
+{% csrf_token %}
+Employee Id:<input type="number" name="empid" required><br><br>
+Employee Name:<input type="text" name="empname" required><br><br>
+Empoyee Email:<input type="email" name="empmail" required><br><br>
+Employee Location:<input type="text" name="emploc" required><br><br>
+Employee Date Of Join:<input type="date" name="empdoj" required><br><br>
+Employee Role:<input type="text" name="emprol" required><br><br>
+Employee Qualification:<input type="text" name="empqua" required><br><br>
+Employee Remarks:<input type="text" name="emprem" required><br><br>
+<button type="submit">Save Employee</button>
+</form>
+{% endblock %}
+
+
+{% comment %}
+empid,empname,empmail,emploc,empdoj,emprol,empqua,emprem
+emp_id = models.IntegerField(primary_key=True)
+    emp_name = models.CharField(max_length=100)
+    emp_mail = models.EmailField()
+    emp_location = models.CharField(max_length=100)
+    emp_doj = models.CharField(max_length=100)
+    emp_role = models.CharField(max_length=100)
+    emp_qualificatiov = models.CharField(max_length=100)
+    emp_remarks = models.CharField(max_length=100)
+
+{% endcomment %}

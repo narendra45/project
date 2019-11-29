@@ -1,0 +1,47 @@
+{% extends 'base2.html' %}
+{% block content %}
+<table align="center" border="2">
+    <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Employee Email</th>
+        <th>Employee Location</th>
+        <th>Employee Date Of Join</th>
+        <th>Employee Role</th>
+        <th>Employee Qualification</th>
+        <th>Employee Remarks</th>
+        <th>Update Employee</th>
+        <th>Delete Employee</th>
+    </tr>
+    {% for details in data %}
+    <tr>
+        <td>{{ details.emp_id }}</td>
+        <td>{{ details.emp_name }}</td>
+        <td>{{ details.emp_mail }}</td>
+        <td>{{ details.emp_location }}</td>
+        <td>{{ details.emp_doj }}</td>
+        <td>{{ details.emp_role }}</td>
+        <td>{{ details.emp_qualificatiov }}</td>
+        <td>{{ details.emp_remarks }}</td>
+        <td>
+            <form action = "/employee/updateemp/" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="empid" value="{{ details.emp_id }}">
+                <button type="submit">update</button>
+            </form>
+        </td>
+        <td>
+            <form action = "/employee/showdelemp/" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="empid" value="{{ details.emp_id }}">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+
+{% comment %}
+empid,empname,empmail,emploc,empdoj,emprol,empqua,emprem
+{% endcomment %}

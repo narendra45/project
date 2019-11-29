@@ -1,0 +1,60 @@
+{% extends 'home.html' %}
+
+{% block title %}Home{% endblock %}
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+			<div class="col-md-5 mx-auto">
+			<div id="first">
+				<div class="myform form ">
+					 <div class="logo mb-3">
+						 <div class="col-md-12 text-center">
+							<h1>Login Admin/User</h1>
+						 </div>
+					</div>
+                   <form action="/accounts/login/" method="post" name="login">
+                       {% csrf_token %}
+                           <div class="form-group">
+                              <label for=" ">User Name</label>
+                              <input type="text" name="username"  class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter Username">
+                           </div>
+                           <div class="form-group">
+                              <label for=" ">Password</label>
+                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                           </div>
+                           <div class="form-group">
+                              <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
+                           </div>
+                           <div class="col-md-12 text-center ">
+                              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                           </div>
+                           <div class="col-md-12 ">
+                              <div class="login-or">
+                                 <hr class="hr-or">
+                                 <span class="span-or">or</span>
+                              </div>
+                           </div>
+
+                           <div class="form-group">
+                              <p class="text-center">Don't have account? <a href="/accounts/register/" id="signup">Sign up here</a></p>
+                           </div>
+                   </form>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div>
+
+            {% for message in messages %}
+            <h3> {{message}}  </h3>
+            {% endfor %}
+        </div>
+    </div>
+    {% block content %}
+        {% if message %}
+            {{ message }}
+        {% endif %}
+    {% endblock %}
+{% endblock %}

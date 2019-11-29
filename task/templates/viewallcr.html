@@ -1,0 +1,32 @@
+{% extends 'welcome.html' %}
+{% block content %}
+<div class="container">
+  <h2 align="center">All Credentials</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Credential Name</th>
+        <th>Credentials</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% if data %}
+    {% for x in data %}
+      <tr>
+        <td>{{ x.credential_name }}</td>
+        <td>{{ x.credential }}</td>
+          <td><a href="/accounts/updatecr/?idno={{ x.id }}">Update</a></td>
+          <td><a href="/accounts/deletecr/?idno={{ x.id }}">Delete</a></td>
+      </tr>
+    {% endfor %}
+    {% endif %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+
+{% if message %}
+    {{ message }}
+{% endif %}

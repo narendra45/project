@@ -1,0 +1,40 @@
+{% extends 'welcome.html' %}
+{% block content %}
+    <div class="container" align="center" style="margin-top:100px" >
+    <form action="/accounts/addcr/" method="post">
+        {% csrf_token %}
+        <div class="row" align="center" style="margin-top:30px">
+    	<h2>Add Credentials</h2>
+
+    </div>
+    <div class="row" align="center" style="margin-top:10px">
+    	<div class="col-sm-2">
+      		<label for="crname">Credentials Name</label>
+      	</div>
+        <div class="col-sm-4">
+      		<input type="text" class="form-control" id="crname" name="crname">
+        </div>
+    </div>
+        <div class="row" align="center" style="margin-top:30px">
+    	<div class="col-sm-2">
+      		<label for="crid">Credentials</label>
+      	</div>
+        <div class="col-sm-4">
+      		<input type="text" class="form-control" id="crid" name="crid">
+        </div>
+    </div>
+        <div class="row" align="center" style="margin-top:30px">
+
+      	<div class="col-sm-4">
+      		<input type="text" class="d-none" value="{{ user.id }}" id="userid" name="userid" hidden>
+    	</div>
+ 	</div>
+    <div class="row" align="center" style="margin-top:10px">
+
+    	<button type="submit" class="btn btn-primary">Add</button>
+    </div>
+
+
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base2.html' %}
+{% block content %}
+    <h3>User Id:{{ data.user_id }}</h3>
+    <h3>User Name:{{ data.user_name }}</h3>
+    <h3>User Email:{{ data.user_mail }}</h3>
+    <h3>Phone Number:{{ data.user_cont_no }}</h3>
+    <h3>Addres:{{ data.user_address }}</h3>
+
+
+    <h4>
+        Do You Want To Delete Employee.....?
+        <form action="/plotuser/conformdeluser/" method="post">
+            {% csrf_token %}
+             <input type="hidden" name="empid" value="{{ data.user_id }}">
+                <button type="submit">Yes</button>
+        </form>
+
+
+        <form action="/welcome/" >
+            {% csrf_token %}
+                <button type="submit">No</button>
+        </form>
+    </h4>
+
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends 'base2.html' %}
+
+
+
+{% block content %}
+    <form  class="form-inline" action="/projectdetails/saveplot/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+     <div class="form-group">
+         <label for="plotno ">Plot Number:</label>
+         <input type="number" name="plotno"  class="form-control" id="plotno" aria-describedby="basic-addon1">
+     </div><br><br>
+    <div class="form-group">
+         <label for="plotimg">Plot Image:</label>
+         <input type="file" name="plotimg"  class="form-control-file border" id="plotno" aria-describedby="basic-addon1" required>
+     </div>
+    <div class="form-group">
+         <label for="roadno">Road Number:</label>
+         <input type="number" name="roadno"  class="form-control" id="roadno" aria-describedby="basic-addon1">
+     </div>
+
+    <div class="form-group">
+         <label for="surveyno">Survey Number</label>
+         <input type="number" name="surveyno"  class="form-control" id="surveyno" aria-describedby="basic-addon1">
+     </div>
+
+
+    <div class="form-group">
+         <label for="costpersqd">Cost Per Squareyard</label>
+         <input type="number" name="costpersqd"  class="form-control" id="costpersqd" aria-describedby="basic-addon1">
+     </div>
+
+
+    <div class="form-group">
+         <label for="otherexp">Other Expences</label>
+         <input type="number" name="otherexp"  class="form-control" id="otherexp" aria-describedby="basic-addon1">
+     </div>
+
+
+    <div class="form-group">
+         <label for="boundaries">Boundaries</label>
+         <input type="number" name="boundaries"  class="form-control" id="boundaries" aria-describedby="basic-addon1">
+     </div>
+
+    <div class="form-group">
+         <label for="face">Facing:</label>
+      <select class="form-control" id="face" name="face" aria-describedby="basic-addon1">
+        <option>.........</option>
+        <option>EAST</option>
+        <option>WEST</option>
+        <option>NORTH</option>
+        <option>SOUTH</option>
+      </select>
+     </div><br><br>
+
+
+    <div class="form-group">
+         <label for="status">Status:</label>
+      <select class="form-control" id="status" name="status" aria-describedby="basic-addon1" >
+        <option>.........</option>
+        <option>VACANT</option>
+        <option>RESERVED</option>
+        <option>SOLD</option>
+      </select>
+     </div><br><br>
+
+
+    <div class="form-group">
+         <label for="tcost">Total Cost</label>
+         <input type="number" name="tcost"  class="form-control" id="tcost" aria-describedby="basic-addon1">
+     </div>
+
+
+    <button type="submit" class="btn btn-primary">SaveDetails</button>
+
+    </form>
+
+    {% comment %}
+    plotno,plotimg,roadno,surveyno,costpersqd,otherexp,boundaries,face(l),status(l),tcost
+    {% endcomment %}
+
+<div class="form-group">
+    {% block message %}
+        {% if message %}
+            {{ message }}
+        {% endif %}
+    {% endblock %}
+
+    </div>
+{% endblock %}
+

@@ -1,0 +1,31 @@
+{% extends 'base2.html' %}
+{% block content %}
+
+<table align="center" border="2">
+    <tr>
+            <th colspan="3">Click Plot No To Show All Details</th>
+    </tr>
+    <tr>
+        <th>Plot Number</th>
+        <th>Road Number</th>
+        <th>Servey Number</th>
+    </tr>
+    <tr>
+        <td><a href="/projectdetails/viewalldetails/?plot_no={{ data.plot_no }}">{{ data.plot_no }}</a></td>
+        <td>{{ data.road_no }}</td>
+        <td>{{ data.survey_no }}</td>
+    </tr>
+</table>
+{% endblock %}
+
+{% comment %}
+<form action="projectdetails/viewalldetails/" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" value="{{ data.plot_no }}" name="plotno">
+                            <button type="submit">
+                                {{ data.plot_no }}
+                            </button>
+            </form>
+
+
+{% endcomment %}

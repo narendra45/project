@@ -1,0 +1,20 @@
+{% extends 'base2.html' %}
+{% block content %}
+
+<table align="center" border="2">
+    <tr>
+        <th>User Id</th>
+        <th>User Name</th>
+        <th>Phone Number</th>
+        <th>Email Id</th>
+        <th>Addres</th>
+    </tr>
+    <tr>
+        <td>{{ data.user_id }}</td>
+        <td>{{ data.user_name }}</td>
+        <td>{{ data.user_cont_no }}</td>
+        <td>{{ data.user_mail }}</td>
+        <td>{{ data.user_address }}</td>
+    </tr>
+</table>
+{% endblock %}

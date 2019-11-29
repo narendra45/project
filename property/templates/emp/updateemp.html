@@ -1,0 +1,15 @@
+{% extends 'base2.html' %}
+{% block content %}
+<form action="/employee/saveemp/" method="post">
+{% csrf_token %}
+Employee Id:<input type="number" name="empid" value="{{ data.emp_id }}" required><br><br>
+Employee Name:<input type="text" name="empname" value="{{ data.emp_name }}" required><br><br>
+Empoyee Email:<input type="email" name="empmail" value="{{ data.emp_mail }}" required><br><br>
+Employee Location:<input type="text" name="emploc" value="{{ data.emp_location }}" required><br><br>
+Employee Date Of Join:<input type="date" name="empdoj" value="{{ data.emp_doj }}" required><br><br>
+Employee Role:<input type="text" name="emprol" value="{{ data.emp_role }}" required><br><br>
+Employee Qualification:<input type="text" name="empqua" value="{{ data.emp_qualificatiov }}" required><br><br>
+Employee Remarks:<input type="text" name="emprem" value="{{ data.emp_remarks }}" required><br><br>
+<button type="submit">Update Employee</button>
+</form>
+{% endblock %}

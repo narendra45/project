@@ -1,0 +1,17 @@
+{% extends "base2.html" %}
+
+{% block content %}
+<form action="/projectdetails/viewall/"method="post">
+{% csrf_token %}
+     <div class="form-group">
+         <label for="plotno ">Plot Number</label>
+         <input type="number" name="plotno"  class="form-control" id="plotno" aria-describedby="basic-addon1">
+     </div>
+<button type="submit" class="btn btn-primary">view</button>
+</form>
+     {% if messages %}
+            {% for message in messages %}
+            <h3> {{message}}  </h3>
+            {% endfor %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script  type="text/javascript" src="{% static 'css/jquery.min.js' %}"></script>
+    <script  type="text/javascript" src="{% static 'css/popper.min.js' %}"></script>
+    <script  type="text/javascript" src="{% static 'css/bootstrap.min.js' %}"></script>
+<style>
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 25px 0;
+  margin-top: 100px;
+  min-height: 1000px;
+  background:white;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    display: block;
+    }
+</style>
+
+
+</head>
+<body>
+  <main>
+    {% block head %}
+        <div class="container">
+        <div class="row">
+			<div class="col-md-5 mx-auto">
+			<div id="first">
+				<div class="myform form ">
+					 <div class="logo mb-3">
+						 <div class="col-md-12 text-center">
+                             <div class="form-inline">
+                                <img src="{% static 'images/forsale.png' %}" class="rounded" alt="Cinque Terre" width="50" height="50">
+                            <h3>Blood Donar Web Prtal</h3>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+<nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</nav>
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+    {% endblock %}
+{% block body %}
+
+
+
+    {% block message %}
+        {% if messages %}
+            {% for message in messages %}
+            {{ message }}
+            {% endfor %}
+        {% endif %}
+    {% endblock %}
+
+    {% endblock %}
+      </div>
+  </main>
+
+</body>
+</html>

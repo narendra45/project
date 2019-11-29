@@ -1,0 +1,25 @@
+{% extends 'welcome.html' %}
+
+{% block content %}
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>username</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Mobile Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ user.username }}</td>
+        <td>{{ user.first_name }} {{ user.last_name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ info.contact }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}

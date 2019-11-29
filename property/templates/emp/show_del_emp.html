@@ -1,0 +1,28 @@
+{% extends 'base2.html' %}
+{% block content %}
+    <h3>Employee Id:{{ data.emp_id }}</h3>
+    <h3>Employee Name:{{ data.emp_name }}</h3>
+    <h3>EmpoyeeEmail:{{ data.emp_mail }}</h3>
+    <h3>Employee Location:{{ data.emp_location }}</h3>
+    <h3>Employee DateOfJoin:{{ data.emp_doj }}</h3>
+    <h3>Employee Role:{{ data.emp_role }}</h3>
+    <h3>Employee Qualification:{{ data.emp_qualificatiov }}</h3>
+    <h3>Employee Remarks:{{ data.emp_remarks }}</h3>
+
+    <h4>
+        Do You Want To Delete Employee.....?
+        <form action="/employee/deletemp/" method="post">
+            {% csrf_token %}
+             <input type="hidden" name="empid" value="{{ data.emp_id }}">
+                <button type="submit">Yes</button>
+        </form>
+
+
+        <form action="/employee/viewallemp/" >
+            {% csrf_token %}
+             <input type="hidden" name="empid" value="{{ data.emp_id }}">
+                <button type="submit">No</button>
+        </form>
+    </h4>
+
+{% endblock %}
