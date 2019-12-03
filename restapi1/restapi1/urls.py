@@ -22,4 +22,5 @@ urlpatterns = [
     path('read_one/',views.ReadOneProduct.as_view()),
     path('read_all/',views.ReadAllProducts.as_view()),
     path('read_one_all/',views.ReadAllOneProducts.as_view()),
+    path('insert_product/',views.InsertProduct.as_view()),
 ]

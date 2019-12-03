@@ -40,3 +40,25 @@ class ReadAllOneProducts(View):
             ps = ProductSerializers(qs,many = True)
             json_data = JSONRenderer().render(ps.data)
             return HttpResponse(json_data,content_type = 'application/json')
+
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
+from django.db.utils import IntegrityError
+
+@method_decorator(csrf_exempt,name="dispatch")
+class InsertProduct(View):
+    def post(self,request):
+        stream = io.BytesIO(request.body)
+        d1 = JSONParser().parse(stream)
+        #sending data to serializers class to save it into the database
+        ps = ProductSerializers(data=d1)
+        if ps.is_valid():
+            try:
+                ps.save()
+                message = {"msg":"Product is Saved"}
+            except IntegrityError:
+                message = {"msg":"Product No is Inavlid"}
+        else:
+            message = {"msg":"Product is not saved"}
+        json_data = JSONRenderer().render(message)
+        return HttpResponse(json_data,content_type="application/json")
