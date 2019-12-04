@@ -62,3 +62,24 @@ class InsertProduct(View):
             message = {"msg":"Product is not saved"}
         json_data = JSONRenderer().render(message)
         return HttpResponse(json_data,content_type="application/json")
+
+@method_decorator(csrf_exempt,name="dispatch")
+class UpdateProduct(View):
+    def put(self,request):
+        d1=JSONParser().parse(io.BytesIO(request.body))
+        pro = ProductModel.objects.get(no=d1["no"])
+        ps = ProductSerializers(pro,data=d1,partial=True)
+        if ps.is_valid():
+            ps.save()
+            message = {"msg":"product updated Successfully"}
+        else:
+            message = {"msg":ps.errors}
+        json_data = JSONRenderer().render(message)
+        return HttpResponse(json_data,content_type="application/json")
+
+@method_decorator(csrf_exempt,name="dispatch")
+class DeleteProduct(View):
+    def delete(self,request):
+        ProductModel.objects.get(no=JSONParser().parse(io.BytesIO(request.body))["no"]).delete()
+        message = {"msg":"Product Deleted Successfully"}
+        return HttpResponse(JSONRenderer().render(message),content_type="application/json")

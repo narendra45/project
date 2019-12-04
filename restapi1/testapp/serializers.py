@@ -14,3 +14,11 @@ class ProductSerializers(serializers.Serializer):
             return ProductModel.objects.create(**valid_data)
         except IntegrityError as ie:
             raise ie
+    def update(self,instance,valid_data):
+        instance.no = valid_data.get("no",instance.no)
+        instance.name = valid_data.get("name",instance.name)
+        instance.price = valid_data.get("price",instance.price)
+        instance.qty = valid_data.get("qty",instance.qty)
+
+        instance.save()
+        return instance

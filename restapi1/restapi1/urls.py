@@ -23,4 +23,6 @@ urlpatterns = [
     path('read_all/',views.ReadAllProducts.as_view()),
     path('read_one_all/',views.ReadAllOneProducts.as_view()),
     path('insert_product/',views.InsertProduct.as_view()),
+    path('update_product/',views.UpdateProduct.as_view()),
+    path('delete_product/',views.DeleteProduct.as_view()),
 ]
