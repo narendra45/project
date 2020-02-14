@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    <title>Galley Page</title>
+</head>
+<body>
+{% block content %}
+    <style>
+    img{
+        border: 3px black solid;
+    }
+    body{
+        background-color:pink;
+    }
+    </style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'images/charan.jpg' %}" style="width: 100%"; height="100%">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'images/dhanush.jpg' %}"  style="width: 100%"; height="100%">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'images/mahesh.jpg' %}" style="width: 100%"; height="100%">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'images/ntr.jpg' %}"  style="width: 100%"; height="100%">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'images/naresh.jpg' %}" style="width: 100%"; height="100%">
+        </div>
+        <div class="col-md-4">
+        <img src="{% static 'images/pawan.jpg' %}" style="width: 100%"; height="100%">
+         </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'images/Sachin.jpg' %}" style="width: 100%"; height="100%">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'images/vishnu.jpg' %}"style="width: 100%"; height="100%">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'images/surya.jpg' %}"style="width: 100%"; height="100%">
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

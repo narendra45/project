@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dbe3f1d-6b56-4b96-b4e3-a124c1dbdc27" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="4dbe3f1d-6b56-4b96-b4e3-a124c1dbdc27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18e0acf9-0cae-46e6-8cc0-9ef3cada1df7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18e0acf9-0cae-46e6-8cc0-9ef3cada1df7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33cc49ec-39f2-44e9-af78-899da228b1e0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33cc49ec-39f2-44e9-af78-899da228b1e0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../property/.idea/dataSources/229b8f1c-3366-4b8e-ba37-aaf0618f669e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../property/.idea/dataSources/229b8f1c-3366-4b8e-ba37-aaf0618f669e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../property/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../property/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../property/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../property/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../property/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../property/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task/.idea/dataSources/8ce38b04-db3f-4df1-a788-b5be34f08d52.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task/.idea/dataSources/8ce38b04-db3f-4df1-a788-b5be34f08d52.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../task/accounts/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,28 +61,33 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\GitHub\project\onlinesale\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1TJoeR4RwDo0dC7toupdkNrgSx2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../merchant" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../property" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="onlinesale" type="Python.DjangoServer" factoryName="Django server">
@@ -97,6 +115,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -116,10 +146,36 @@
       <workItem from="1574162177903" duration="732000" />
       <workItem from="1574232537256" duration="1187000" />
       <workItem from="1574515866370" duration="1452000" />
+      <workItem from="1576047423821" duration="193000" />
+      <workItem from="1576394948401" duration="161000" />
+      <workItem from="1576395161283" duration="3771000" />
+      <workItem from="1580636942916" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="141" key="FileChooserDialogImpl" timestamp="1580636992917">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="141" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1580636992917" />
+    <state width="1286" height="176" key="GridCell.Tab.0.bottom" timestamp="1576047622739">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="176" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1576047622739" />
+    <state width="1286" height="176" key="GridCell.Tab.0.center" timestamp="1576047622739">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="176" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1576047622739" />
+    <state width="1286" height="176" key="GridCell.Tab.0.left" timestamp="1576047622739">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="176" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1576047622739" />
+    <state width="1286" height="176" key="GridCell.Tab.0.right" timestamp="1576047622739">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="176" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1576047622739" />
   </component>
 </project>

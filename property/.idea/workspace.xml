@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed195438-8105-4040-b424-62956d0b6cf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../onlinesale/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../onlinesale/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EMP-DEV/.idea/dataSources/4a38f0af-5466-4a31-8aa4-159a926974a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EMP-DEV/.idea/dataSources/4a38f0af-5466-4a31-8aa4-159a926974a8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EMP-DEV/.idea/dataSources/9077ddfe-efa7-400c-9c96-c2ec8c7553ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EMP-DEV/.idea/dataSources/9077ddfe-efa7-400c-9c96-c2ec8c7553ca.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EMP-DEV/.idea/dataSources/f59d496a-ff2d-4be4-8bd6-4c41d6f4e6f2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EMP-DEV/.idea/dataSources/f59d496a-ff2d-4be4-8bd6-4c41d6f4e6f2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EMP-DEV/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EMP-DEV/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onlinesale/.idea/dataSources/18e0acf9-0cae-46e6-8cc0-9ef3cada1df7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../onlinesale/.idea/dataSources/18e0acf9-0cae-46e6-8cc0-9ef3cada1df7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onlinesale/.idea/dataSources/33cc49ec-39f2-44e9-af78-899da228b1e0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../onlinesale/.idea/dataSources/33cc49ec-39f2-44e9-af78-899da228b1e0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onlinesale/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../onlinesale/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/229b8f1c-3366-4b8e-ba37-aaf0618f669e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/229b8f1c-3366-4b8e-ba37-aaf0618f669e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/plotdata/newplot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/plotdata/newplot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task/.idea/dataSources/8ce38b04-db3f-4df1-a788-b5be34f08d52.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task/.idea/dataSources/8ce38b04-db3f-4df1-a788-b5be34f08d52.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../task/accounts/urls.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +71,9 @@
     </expand>
     <select />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -71,17 +87,23 @@
   </component>
   <component name="ProjectId" id="1SmBD90xKR6NjFZXUdnPWYCbdje" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/RTP 8pm/Project11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EMP-DEV" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -89,18 +111,6 @@
       <recent name="F:\ARTP Practise\property\accounts\static\css" />
       <recent name="F:\ARTP Practise\property\accounts" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Django server.property">
     <configuration name="base1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/property/templates/base1.html" useBuiltInWebServerPort="true">
@@ -149,23 +159,15 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a374880f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a374880f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@481e358b" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -195,6 +197,12 @@
       <workItem from="1573189896160" duration="783000" />
       <workItem from="1575126228784" duration="537000" />
       <workItem from="1575269231052" duration="735000" />
+      <workItem from="1576047485602" duration="536000" />
+      <workItem from="1576163662001" duration="1503000" />
+      <workItem from="1576394925806" duration="14000" />
+      <workItem from="1576395145483" duration="4833000" />
+      <workItem from="1576478367428" duration="328000" />
+      <workItem from="1580636997020" duration="4986000" />
     </task>
     <servers />
   </component>
@@ -213,5 +221,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="141" key="FileChooserDialogImpl" timestamp="1580653644478">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="141" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1580653644478" />
+    <state width="1286" height="176" key="GridCell.Tab.0.bottom" timestamp="1576170114166">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="176" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1576170114166" />
+    <state width="1286" height="176" key="GridCell.Tab.0.center" timestamp="1576170114166">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="176" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1576170114166" />
+    <state width="1286" height="176" key="GridCell.Tab.0.left" timestamp="1576170114166">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="176" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1576170114166" />
+    <state width="1286" height="176" key="GridCell.Tab.0.right" timestamp="1576170114166">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="176" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1576170114166" />
+    <state x="186" y="29" key="SettingsEditor" timestamp="1580653613613">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="186" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1580653613613" />
   </component>
 </project>
