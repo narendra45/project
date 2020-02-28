@@ -2,19 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dbe3f1d-6b56-4b96-b4e3-a124c1dbdc27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18e0acf9-0cae-46e6-8cc0-9ef3cada1df7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18e0acf9-0cae-46e6-8cc0-9ef3cada1df7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33cc49ec-39f2-44e9-af78-899da228b1e0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33cc49ec-39f2-44e9-af78-899da228b1e0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../property/.idea/dataSources/229b8f1c-3366-4b8e-ba37-aaf0618f669e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../property/.idea/dataSources/229b8f1c-3366-4b8e-ba37-aaf0618f669e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../property/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../property/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../property/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../property/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../property/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../property/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task/.idea/dataSources/8ce38b04-db3f-4df1-a788-b5be34f08d52.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task/.idea/dataSources/8ce38b04-db3f-4df1-a788-b5be34f08d52.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/migrations/0002_contactdata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/migrations/0003_coursesdata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djproject/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djproject/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djproject/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djproject/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/css/logindata.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/Sachin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/address.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/charan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/dhanush.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/feedback.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/feedback2.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/kohli.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/loc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/mahesh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/monkies.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/naresh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/ntr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/pawan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/rahul.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/students.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/surya.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/vishnu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/logindata.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/project_contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/project_feedback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/project_gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/project_home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/project_services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/reg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../merchant/.idea/dataSources/55d66428-07f9-4200-85f9-f36b30394b6a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../merchant/.idea/dataSources/55d66428-07f9-4200-85f9-f36b30394b6a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../task/accounts/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +182,7 @@
       <workItem from="1576394948401" duration="161000" />
       <workItem from="1576395161283" duration="3771000" />
       <workItem from="1580636942916" duration="57000" />
+      <workItem from="1582356337365" duration="27000" />
     </task>
     <servers />
   </component>
@@ -157,10 +190,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="141" key="FileChooserDialogImpl" timestamp="1580636992917">
+    <state x="463" y="141" key="FileChooserDialogImpl" timestamp="1582356361856">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="141" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1580636992917" />
+    <state x="463" y="141" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1582356361856" />
     <state width="1286" height="176" key="GridCell.Tab.0.bottom" timestamp="1576047622739">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

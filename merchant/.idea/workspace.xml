@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a876e4a0-dd49-4ac2-aa5a-f1cce39f4fd1" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="a876e4a0-dd49-4ac2-aa5a-f1cce39f4fd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../djproject/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/migrations/0002_contactdata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/migrations/0003_coursesdata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djapp/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djproject/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djproject/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djproject/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/djproject/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/css/logindata.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/Sachin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/address.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/charan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/dhanush.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/feedback.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/feedback2.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/kohli.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/loc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/mahesh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/monkies.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/naresh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/ntr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/pawan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/rahul.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/students.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/surya.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/static/images/vishnu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/logindata.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/project_contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/project_feedback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/project_gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/project_home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/project_services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djproject/templates/reg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/55d66428-07f9-4200-85f9-f36b30394b6a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/55d66428-07f9-4200-85f9-f36b30394b6a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onlinesale/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../onlinesale/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,29 +92,26 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1TMinyYSnesG0J4J2HKvhLyjlKQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../onlinesale" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="merchant" type="Python.DjangoServer" factoryName="Django server">
@@ -96,6 +139,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -116,10 +171,17 @@
       <workItem from="1574657717520" duration="1495000" />
       <workItem from="1574691449998" duration="1258000" />
       <workItem from="1574744712279" duration="664000" />
+      <workItem from="1582356304520" duration="378000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="141" key="FileChooserDialogImpl" timestamp="1582356334051">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="141" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1582356334051" />
   </component>
 </project>

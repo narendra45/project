@@ -1,0 +1,55 @@
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Product</title>
+</head>
+<body>
+<div class="row">
+    <div class="col-md-8">
+        <div class="page-header">
+            <h1>Edit Product</h1>
+        </div>
+    <form method="post" action="#">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        {% if messages %}
+            {% for msg in messages %}
+                <h3>{{ msg }}</h3>
+            {% endfor %}
+            {% endif %}
+    </div>
+</div>
+</body>
+</html>
+{% comment %}
+
+<table align="center">
+    <tr>
+    <td>
+    <form method="post" action="#">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit">Submit</button>
+    </form>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {% if messages %}
+            {% for msg in messages %}
+            {{ msg }}
+            {% endfor %}
+            {% endif %}
+        </td>
+    </tr>
+</table>{% endcomment %}

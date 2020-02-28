@@ -1,0 +1,20 @@
+<table align="center">
+    <tr>
+    <td>
+    <form method="post" action="#" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {% if messages %}
+            {% for msg in messages %}
+            {{ msg }}
+            {% endfor %}
+            {% endif %}
+        </td>
+    </tr>
+</table>

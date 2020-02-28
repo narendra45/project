@@ -1,0 +1,72 @@
+<form method="post" action="#" novalidate>
+    {% csrf_token %}
+
+    {{ form.non_field_errors }}
+    {{ form.source.errors }}
+    {{ form.source }}
+    <table border="1">
+
+        <tr>
+          <th>{{ form.first_name.label_tag }}</th>
+          <td>
+            {{ form.first_name.errors }}
+            {{ form.first_name }}
+          </td>
+        </tr>
+
+        <tr>
+            <th>{{ form.last_name.label_tag }}</th>
+            <td>
+              {{ form.last_name.errors }}
+              {{ form.last_name }}
+            </td>
+          </tr>
+            <tr>
+            <th>{{ form.user_name.label_tag }}</th>
+            <td>
+              {{ form.user_name.errors }}
+              {{ form.user_name }}
+            </td>
+          </tr>
+
+          <tr>
+            <th>{{ form.email_id.label_tag }}</th>
+            <td>
+              {{ form.email_id.errors }}
+              {{ form.email_id }}
+            </td>
+          </tr>
+
+          <tr>
+            <th>{{ form.contact_no.label_tag }}</th>
+            <td>
+              {{ form.contact_no.errors }}
+              {{ form.contact_no }}
+            </td>
+          </tr>
+
+          <tr>
+            <th>{{ form.password.label_tag }}</th>
+            <td>
+              {{ form.password.errors }}
+              {{ form.password }}
+            </td>
+          </tr>
+        <tr>
+            <th>{{ form.rpassword.label_tag }}</th>
+            <td>
+              {{ form.rpassword.errors }}
+              {{ form.rpassword }}
+            </td>
+          </tr>
+
+
+    </table>
+
+    <button type="submit">Submit</button>
+  </form>
+{% if messages %}
+{% for msg in messages %}
+{{ msg }}
+{% endfor %}
+{% endif %}

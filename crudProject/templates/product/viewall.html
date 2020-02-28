@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <style>
+
+        ul{
+            overflow:hidden;
+        }
+        li{
+            display:inline;
+        }
+    .pagination {
+  display: inline-block;
+}
+
+.pagination li {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination li.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination li:hover:not(.active) {background-color: #ddd;}
+    </style>
+<body>
+<table class="table table-bordered" border="1">
+      <thead>
+
+        <tr>
+            <th>Product Name</th>
+            <th>product Image</th>
+            <th>Product Tags</th>
+            <th>Category</th>
+            <th>Edit/Delete</th>
+        </tr>
+      </thead>
+<tbody>
+{% for product in products %}
+    <tr>
+        <td>{{ product.product_name }}</td>
+        <td><img src="{{ product.image.url }}" width="50" height="50"></td>
+        <td><br>{% for x in product.tags.all %}{{ x }}<br>{% endfor %}</td>
+        <td>{{ product.category }}</td>
+        <td><a href="{% url 'edit_product' product.id %}"> Edit </a>|
+            <a href="{% url 'delete_product' product.id %}"> Delete </a>
+    </td>
+    </tr>
+{% endfor %}
+</tbody>
+</table>
+{% if products.has_other_pages %}
+  <ul class="pagination">
+    {% if products.has_previous %}
+      <li><a href="?page={{ products.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in products.paginator.page_range %}
+      {% if products.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only"> </span></span></li>
+      {% else %}
+        <li><a href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if products.has_next %}
+      <li><a href="?page={{ products.next_page_number }}">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+{% endif %}
+</body>
+</html>
+
